@@ -1,0 +1,14 @@
+<div>
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" [(ngModel)] = "menuIcon" />
+    <label for="menu-icon"></label>
+    <nav class="nav"> 		
+        <ul class="pt-5">
+            <li (click) = negarInput()><a [routerLink] = "['home']" >Home</a></li>
+            <li (click) = negarInput()><a [routerLink] = "['settings']">Settings</a></li>
+            <li (click) = negarInput()><a [routerLink] = "['account']">Account</a></li>
+            <li (click) = negarInput()><a [routerLink] = "['account']">Configure</a></li>
+            <li (click) = negarInput()><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    

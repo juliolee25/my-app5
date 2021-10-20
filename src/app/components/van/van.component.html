@@ -1,0 +1,50 @@
+<h2>Choose Your Van</h2>
+<div class="container-card">
+  
+  <div class="card" (click) ="selected(1)">
+    <figure>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ9DMNFHxwZcfPXJrJeBMITxPMP3FMZk_ixXzTfzt4G_C-G058">
+    </figure>
+    <div class="contenido-card">
+      <h3>Basic Van</h3>
+      <p>Ancho: </p>
+      <p>Largo: </p>
+      <p>Altura: </p>
+      <div>
+        <input type="radio" name="van" value="1" [(checked)]="van1" >
+      </div>
+    </div>
+  </div>
+  <div class="card" (click) ="selected(2)">
+    <figure>
+      <img src="https://colmayorbolivar.edu.co/blog/wp-content/uploads/2017/06/imagen-administracion.jpg">
+    </figure>
+    <div class="contenido-card">
+      <h3>Middle Van</h3>
+      <p>Ancho: </p>
+      <p>Largo: </p>
+      <p>Altura: </p>
+      <div>
+        <input type="radio" name="van" value="2" [(checked)]="van2">
+      </div>
+    </div>
+  </div>
+  <div class="card" (click) ="selected(3)">
+    <figure>
+      <img
+        src="https://image.freepik.com/foto-gratis/desarrollo-programadores-desarrollo-tecnologias-diseno-codificacion-sitios-web_18497-1090.jpg">
+    </figure>
+    <div class="contenido-card">
+      <h3>Large Van</h3>
+      <p>Ancho: </p>
+      <p>Largo: </p>
+      <p>Altura: </p>
+      <div>
+        <input type="radio" name="van" value="3" [(checked)]="van3">
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div><button type=" button" (click)="otherSection()">Continuar</button></div>

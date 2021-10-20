@@ -1,0 +1,94 @@
+<div>
+  <h2>Choose Your box</h2>
+  <div class="container-card">
+
+    <div class="card">
+      <figure>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ9DMNFHxwZcfPXJrJeBMITxPMP3FMZk_ixXzTfzt4G_C-G058">
+      </figure>
+      <div class="contenido-card">
+        <h3>Basic Box</h3>
+        <p>Ancho: </p>
+        <p>Largo: </p>
+        <p>Altura: </p>
+        <div>
+          <input type="button" value=" - " (click) = "boxCantidad(1, false)">
+          <input type="text" maxlength="5" size="5" [(ngModel)]="box1.val" #box1Model="ngModel">
+          <input type="button" value=" + " (click) = "boxCantidad(1, true)">
+        </div>
+        <div *ngIf="(box1Model.dirty || box1Model.touched) " style="color: red;">
+          <div *ngIf="!box1.isValid()">
+            <p>{{box1.error}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img src="https://colmayorbolivar.edu.co/blog/wp-content/uploads/2017/06/imagen-administracion.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>Middle Box</h3>
+        <p>Ancho: </p>
+        <p>Largo: </p>
+        <p>Altura: </p>
+        <div>
+          <input type="button" value=" - " (click) = "boxCantidad(2, false)">
+          <input type="text" name="nombre" maxlength="5" size="5" [(ngModel)]="box2.val" #box2Model="ngModel">
+          <input type="button" value=" + " (click) = "boxCantidad(2, true)">
+        </div>
+        <div *ngIf="(box2Model.dirty || box2Model.touched) " style="color: red;">
+          <div *ngIf="!box2.isValid()">
+            <p>{{box2.error}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img
+          src="https://image.freepik.com/foto-gratis/desarrollo-programadores-desarrollo-tecnologias-diseno-codificacion-sitios-web_18497-1090.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>Large Box</h3>
+        <p>Ancho: </p>
+        <p>Largo: </p>
+        <p>Altura: </p>
+        <div>
+          <input type="button" value=" - " (click) = "boxCantidad(3, false)">
+          <input type="text" name="nombre" maxlength="5" size="5" [(ngModel)]="box3.val" #box3Model="ngModel">
+          <input type="button" value=" + " (click) = "boxCantidad(3, true)">
+        </div>
+        <div *ngIf="(box3Model.dirty || box3Model.touched) " style="color: red;">
+          <div *ngIf="!box3.isValid()">
+            <p>{{box3.error}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img
+          src="https://image.freepik.com/foto-gratis/desarrollo-programadores-desarrollo-tecnologias-diseno-codificacion-sitios-web_18497-1090.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>Extra Large Box</h3>
+        <p>Ancho: </p>
+        <p>Largo: </p>
+        <p>Altura: </p>
+        <div>
+          <input type="button" value=" - " (click) = "boxCantidad(4, false)">
+          <input type="text" name="nombre" maxlength="5" size="5" [(ngModel)]="box4.val" #box4Model="ngModel">
+          <input type="button" value=" + " (click) = "boxCantidad(4, true)">
+        </div>
+        <div *ngIf="(box4Model.dirty || box4Model.touched) " style="color: red;">
+          <div *ngIf="!box4.isValid()">
+            <p>{{box4.error}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type=" button" (click)="otherSection()">Continuar</button>
+</div>
